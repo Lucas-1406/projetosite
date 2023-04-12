@@ -1,0 +1,126 @@
+@import url('..https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'Android';
+    src: url(../fontes/idroid.otf) format('opentype');
+    font-weight: medium;
+    
+}
+:root {
+--cor1 :  #8cbcce;
+--cor2 :  #76a6ce;
+--cor3 :  #87BFED;
+--cor4 :  #5F676E;
+--cor5 :  #3131db17;
+
+--fontep : font-family: Arial, Verdana, sans-serif;
+--fonted : font-family: 'Bebas Neue', 'cursive';
+--fontea : font-family: 'Android', sans-serif;
+}
+body{
+    font-family: var(--fontep);
+    background-color: var(--cor1)
+    
+}
+header{
+    background-color: #76a6ce;
+    background-image: linear-gradient(to bottom, #76a6ce, #587b9788);
+    padding-top: 15px;
+    margin-bottom: 15px;
+    font-family: var(--fontep);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.329)
+    }
+header > h1{
+    text-align: center;
+    color: #cfcfe2dc;
+    
+}
+header > h3{
+   text-align: center;
+   color: #cfcfe2dc;
+}
+nav{    
+    font-family: var(--fontea);
+    background-color: var(--cor5);
+}
+nav > a {
+    text-decoration: none;
+    color: white;
+    transition-duration: 0.5s;
+    font-weight: bold;
+}
+nav > a:hover{
+    color: var(--cor4);
+    background-color: var(--cor3);
+}
+main{
+    padding: 20px;
+    height: auto;
+    width: 500px;
+    margin: auto;
+    background-color: white;
+
+    max-width: 500px;
+    min-width: 310px;
+
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.425);
+
+    margin-top: 25px;
+    margin-bottom: 15px;
+    /* margin top e bottom são os espaços entre header e main, e main e o fim da pag */
+    
+}
+
+
+main h1,h2 {
+    text-align: center;
+}
+
+main p {
+    text-indent: 15px;
+    line-height: 30px;
+    /*line height é o espaçamento entre linhas*/
+}
+main strong,a{
+    color: #68a2b8;
+}
+main a:hover{
+    background-color: lightblue;
+   
+    
+}
+main > img {
+    width: 100%;
+}
+
+aside{
+    background-color: var(--cor3);
+    padding: 0.1px;
+    border-radius: 10px;
+}
+aside h3{
+    background-color: #103c636e;
+    
+}
+aside ol {
+   list-style-position: inside;
+   /* as "bolinhas que vem ante dos itens estarão agora dentro do aside com o 
+   parametro acima"*/
+   columns: 2;
+   /* numero de colunas da lista*/
+   list-style-type: "*";
+}
+footer{
+    color: white;
+    background-color: var(--cor4);
+
+}
+footer a {
+    text-decoration: none;
+    color: yellow;
+
+
+}
+footer a:hover{
+    text-decoration: none;
+
+}
